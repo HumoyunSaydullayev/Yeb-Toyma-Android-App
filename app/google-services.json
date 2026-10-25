@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "89686660099",
+    "project_id": "yeb-toyma-4a459",
+    "storage_bucket": "yeb-toyma-4a459.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89686660099:android:77f13f330540055a8aaa36",
+        "android_client_info": {
+          "package_name": "com.example.yebtoyma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89686660099-sn1dal2o10pajcl4m62vijmscb2f75v8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yebtoyma",
+            "certificate_hash": "e7884a30eac987d76fd72accbe2656a829f4fa63"
+          }
+        },
+        {
+          "client_id": "89686660099-86nbodptk9qlegj03kjecvgsbprjgh69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7QkZmrzWLu5gxR563Pe2Orrs2Z6cO8og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89686660099-86nbodptk9qlegj03kjecvgsbprjgh69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

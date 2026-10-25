@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/food_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/order_food_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="2dp"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Order_food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Lavash min pro max "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/order_food_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_food_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/item_store"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_delete" />
+    </LinearLayout>
+</LinearLayout>

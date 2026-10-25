@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/user_register_fragment_layout">
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/nav_text"
+       android:fontFamily="@font/nunito_semibold"
+       android:gravity="center_horizontal|center_vertical"
+       android:padding="5dp"
+       android:text="Profil"
+       android:textColor="#00FF22"
+       android:textSize="35sp" />
+
+   <com.airbnb.lottie.LottieAnimationView
+       android:layout_width="180dp"
+       android:layout_height="180dp"
+       android:layout_margin="20dp"
+       android:scaleType="fitXY"
+       app:lottie_autoPlay="true"
+       app:lottie_loop="true"
+       app:lottie_rawRes="@raw/user_register"
+       tools:ignore="MissingClass,MissingConstraints" />
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/user_text"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:gravity="center_horizontal|center_vertical"
+       android:textColorHint="@color/black"
+       app:counterEnabled="true"
+       app:counterMaxLength="15"
+       app:hintTextColor="@color/black">
+
+
+      <EditText
+          android:id="@+id/new_user_name"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:background="@drawable/textfield_select"
+          android:drawableStart="@drawable/ic_person_2"
+          android:fontFamily="@font/nunito_semibold"
+          android:hint="Ismingizni kiriting"
+          android:padding="10dp"
+          android:textColor="@color/sargish"
+          android:textColorHint="@color/black"
+          android:textSize="18sp"
+          tools:ignore="SpeakableTextPresentCheck" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <LinearLayout
+       android:id="@+id/phone_text"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:gravity="center_horizontal|center_vertical"
+       android:orientation="horizontal">
+
+      <com.hbb20.CountryCodePicker
+          android:id="@+id/ccp"
+          android:layout_width="wrap_content"
+          android:layout_height="43dp"
+          app:ccp_defaultNameCode="uz"
+          tools:ignore="MissingClass" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal|center_vertical"
+          android:textColorHint="@color/black"
+          app:counterEnabled="true"
+          app:counterMaxLength="20"
+          app:hintTextColor="@color/black">
+
+
+         <EditText
+             android:id="@+id/new_user_phone_number"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:background="@drawable/textfield_select"
+             android:drawableStart="@drawable/ic_phone"
+             android:fontFamily="@font/nunito_semibold"
+             android:hint="Raqamingiz"
+             android:inputType="phone"
+             android:padding="10dp"
+             android:textColor="@color/sargish"
+             android:textColorHint="@color/black"
+             android:textSize="18sp"
+             tools:ignore="SpeakableTextPresentCheck" />
+      </com.google.android.material.textfield.TextInputLayout>
+   </LinearLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/veriwy_text"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+       android:gravity="center_horizontal|center_vertical"
+       android:textColorHint="@color/black"
+       android:visibility="gone"
+       app:counterEnabled="true"
+       app:counterMaxLength="15"
+       app:hintTextColor="@color/black">
+
+
+      <EditText
+          android:id="@+id/new_user_verification"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:background="@drawable/textfield_select"
+          android:drawableStart="@drawable/ic_lock"
+          android:fontFamily="@font/nunito_semibold"
+          android:hint="Tasdiqlash kodi"
+          android:inputType="number"
+          android:padding="10dp"
+          android:textColor="@color/sargish"
+          android:textColorHint="@color/black"
+          android:textSize="18sp"
+          tools:ignore="SpeakableTextPresentCheck" />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="20dp"
+       android:gravity="center_horizontal"
+       android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/verification_code"
+          android:layout_width="250dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:background="@drawable/custom_button_bg"
+          android:fontFamily="@font/nunito_semibold"
+          android:padding="10dp"
+          android:text="Kodni olish"
+          android:textColor="@color/black"
+          android:textSize="18sp" />
+
+      <Button
+          android:id="@+id/new_register"
+          android:layout_width="250dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:background="@drawable/custom_button_bg"
+          android:fontFamily="@font/nunito_semibold"
+          android:padding="10dp"
+          android:text="Ro'yxatdan o'tish"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          android:visibility="gone" />
+   </LinearLayout>
+
+</LinearLayout>

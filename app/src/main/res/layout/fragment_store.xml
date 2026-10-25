@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_text"
+        android:fontFamily="@font/nunito_semibold"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Savatcha"
+        android:textColor="#00FF22"
+        android:textSize="35sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/empty_store"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/emptystore"
+        tools:ignore="MissingClass,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/EmptyCartText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_semibold"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="Savatcha bo'sh"
+        android:textColor="#00FF22"
+        android:textSize="25sp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/store_recyleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible"
+        tools:listitem="@layout/item_store" />
+
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/order_food_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Buyurtma berish"
+            android:textColor="#00ff22"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
